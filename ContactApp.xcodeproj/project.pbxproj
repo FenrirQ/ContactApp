@@ -16,6 +16,8 @@
 		6550E79E1F4B318D00EB7AF1 /* Recents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6550E79D1F4B318D00EB7AF1 /* Recents.storyboard */; };
 		6550E7A01F4B319E00EB7AF1 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6550E79F1F4B319E00EB7AF1 /* Contacts.storyboard */; };
 		6550E7A21F4B31AD00EB7AF1 /* Keypad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6550E7A11F4B31AD00EB7AF1 /* Keypad.storyboard */; };
+		6550E7A61F4B895B00EB7AF1 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550E7A51F4B895B00EB7AF1 /* ContactViewController.swift */; };
+		6550E7A81F4B89BD00EB7AF1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550E7A71F4B89BD00EB7AF1 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6550E79D1F4B318D00EB7AF1 /* Recents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recents.storyboard; sourceTree = "<group>"; };
 		6550E79F1F4B319E00EB7AF1 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		6550E7A11F4B31AD00EB7AF1 /* Keypad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keypad.storyboard; sourceTree = "<group>"; };
+		6550E7A51F4B895B00EB7AF1 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		6550E7A71F4B89BD00EB7AF1 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				6550E7861F4B2FFF00EB7AF1 /* AppDelegate.swift */,
+				6550E7A91F4B8A8700EB7AF1 /* Controller */,
+				6550E7AA1F4B8A8F00EB7AF1 /* Model */,
 				6550E7A41F4B37A700EB7AF1 /* Storyboards */,
 				6550E7901F4B2FFF00EB7AF1 /* Assets.xcassets */,
 				6550E7921F4B2FFF00EB7AF1 /* LaunchScreen.storyboard */,
@@ -76,12 +82,28 @@
 			isa = PBXGroup;
 			children = (
 				6550E78A1F4B2FFF00EB7AF1 /* Main.storyboard */,
+				6550E79F1F4B319E00EB7AF1 /* Contacts.storyboard */,
 				6550E79B1F4B314100EB7AF1 /* Favorites.storyboard */,
 				6550E79D1F4B318D00EB7AF1 /* Recents.storyboard */,
-				6550E79F1F4B319E00EB7AF1 /* Contacts.storyboard */,
 				6550E7A11F4B31AD00EB7AF1 /* Keypad.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		6550E7A91F4B8A8700EB7AF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6550E7A51F4B895B00EB7AF1 /* ContactViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6550E7AA1F4B8A8F00EB7AF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6550E7A71F4B89BD00EB7AF1 /* Database.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +185,8 @@
 			files = (
 				6550E78F1F4B2FFF00EB7AF1 /* ContactApp.xcdatamodeld in Sources */,
 				6550E7871F4B2FFF00EB7AF1 /* AppDelegate.swift in Sources */,
+				6550E7A81F4B89BD00EB7AF1 /* Database.swift in Sources */,
+				6550E7A61F4B895B00EB7AF1 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +350,7 @@
 				6550E79A1F4B2FFF00EB7AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
